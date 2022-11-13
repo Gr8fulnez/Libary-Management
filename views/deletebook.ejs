@@ -1,0 +1,78 @@
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>book Update Form</title>
+    <link href="/stylesheets/style2.css" type="text/css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <!-- Body of Form starts -->
+    <div class="container">
+        <h3 style="color:#ff6600; text-align: center;">CLICK ON THE DELETE BUTTON TO DELETE THE FOLLOWING PERMANENTLY</h3>
+
+        <form action="/book/delete/<%=record.id%>" method="post" autocomplete="on">
+
+
+            <!--book Title: -->
+            <div class="box">
+                <label for="title" class="fl fontLabel"> Title: </label>
+                <div class="new iconBox">
+                    <i class="fa fa-user" aria-hidden="true"></i>
+                </div>
+                <div class="fr">
+                    <input type="text" name="title" value="<%=record.title%>" class="textBox" autofocus="on" required>
+                </div>
+                <div class="clr"></div>
+            </div>
+
+            <!--book Description-->
+            <div class="box">
+                <label for="description" class="fl fontLabel"> Description: </label>
+                <div class="fl iconBox"><i class="fa fa-user" aria-hidden="true"></i></div>
+                <div class="fr">
+                    <input type="text" required name="description" value="<%=record.description%>" class="textBox">
+                </div>
+                <div class="clr"></div>
+            </div>
+            <!--book Description-->
+
+            <!--book Image-->
+            <div class="box">
+                <label for="image" class="fl fontLabel"> Image Link: </label>
+                <div class="fl iconBox"><i class="fa fa-envelope" aria-hidden="true"></i></div>
+                <div class="fr">
+                    <input type="text" required name="image" value="<%=record.image%>" class="textBox">
+                </div>
+                <div class="clr"></div>
+            </div>
+            <!--book Image-->
+
+
+
+            <!---book Price------>
+            <div class="box">
+                <label for="price" class="fl fontLabel">Price: </label>
+                <div class="fl iconBox"><i class="fa fa-phone-square" aria-hidden="true"></i></div>
+                <div class="fr">
+                    <input type="text" required name="price" maxlength="10" value="<%=record.price%>" class="textBox">
+                </div>
+                <div class="clr"></div>
+            </div>
+            <!---book Price---->
+
+
+
+
+            <!---Submit Button------>
+            <div class="box" style="background: #2d3e3f">
+                <input type="Submit" class="submit" value="DELETE">
+            </div>
+            <!---Submit Button----->
+        </form>
+    </div>
+    <!--Body of Form ends--->
+</body>
+
+</html>

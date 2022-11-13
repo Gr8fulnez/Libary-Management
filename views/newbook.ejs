@@ -1,0 +1,76 @@
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>book Creation Form</title>
+    <link href="/stylesheets/style2.css" type="text/css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <!-- Body of Form starts -->
+    <div class="container">
+        <h2 style="color:orange; text-align: center;">book Details</h2>
+        <form action="/book/create" method="post" autocomplete="on">
+            <!--book Title: -->
+            <div class="box">
+                <label for="title" class="fl fontLabel"> Title: </label>
+                <div class="new iconBox">
+                    <i class="fa fa-envelope" aria-hidden="true"></i>
+                </div>
+                <div class="fr">
+                    <input type="text" name="title" placeholder="book Title" class="textBox" autofocus="on" required>
+                </div>
+                <div class="clr"></div>
+            </div>
+            <!--book Title: -->
+
+
+            <!--book Description-->
+            <div class="box">
+                <label for="description" class="fl fontLabel"> Author: </label>
+                <div class="fl iconBox"><i class="fa fa-envelope" aria-hidden="true"></i></div>
+                <div class="fr">
+                    <input type="text" required name="description" placeholder="Book Author" class="textBox">
+                </div>
+                <div class="clr"></div>
+            </div>
+            <!--book Description-->
+
+            <!--book Image-->
+            <div class="box">
+                <label for="image" class="fl fontLabel"> Image Link: </label>
+                <div class="fl iconBox"><i class="fa fa-envelope" aria-hidden="true"></i></div>
+                <div class="fr">
+                    <input type="text" required name="image" placeholder="book Image Link" class="textBox">
+                </div>
+                <div class="clr"></div>
+            </div>
+            <!--book Image-->
+
+
+            <!---book Price------>
+            <div class="box">
+                <label for="price" class="fl fontLabel">Price: </label>
+                <div class="fl iconBox"><i class="fa fa-envelope" aria-hidden="true"></i></div>
+                <div class="fr">
+                    <input type="text" required name="price" maxlength="10" placeholder="book Price" class="textBox">
+                </div>
+                <div class="clr"></div>
+            </div>
+            <!---book Price---->
+
+
+
+
+            <!---Submit Button------>
+            <div class="box" style="background: #2d3e3f">
+                <button style="background-color:#ff6600;height: 30px; float:right">Create New book</button>
+            </div>
+            <!---Submit Button----->
+        </form>
+    </div>
+    <!--Body of Form ends--->
+</body>
+
+</html>

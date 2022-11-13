@@ -1,0 +1,43 @@
+{
+  "name": "expresstemp",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "start": "node ./bin/www",
+    "dev": "ts-node-dev --respawn ./bin/www",
+    "compile": "tsc -w"
+  },
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "cookie-parser": "^1.4.6",
+    "cookie-session": "^2.0.0",
+    "debug": "~2.6.9",
+    "dotenv": "^16.0.1",
+    "ejs": "~2.6.1",
+    "express": "~4.16.1",
+    "http-errors": "~1.6.3",
+    "joi": "^17.6.0",
+    "jsonwebtoken": "^8.5.1",
+    "morgan": "~1.9.1",
+    "nodemon": "^2.0.19",
+    "sequelize": "^6.21.3",
+    "sqlite3": "^5.0.11",
+    "ts-node-dev": "^2.0.0",
+    "typescript": "^4.7.4",
+    "uuid": "^8.3.2"
+  },
+  "devDependencies": {
+    "@types/bcryptjs": "^2.4.2",
+    "@types/cookie-parser": "^1.4.3",
+    "@types/cookie-session": "^2.0.44",
+    "@types/debug": "^4.1.7",
+    "@types/dotenv": "^8.2.0",
+    "@types/ejs": "^3.1.1",
+    "@types/express": "^4.17.13",
+    "@types/http-errors": "^1.8.2",
+    "@types/joi": "^17.2.3",
+    "@types/jsonwebtoken": "^8.5.8",
+    "@types/morgan": "^1.9.3",
+    "@types/uuid": "^8.3.4"
+  }
+}
